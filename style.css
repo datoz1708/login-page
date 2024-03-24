@@ -19,7 +19,7 @@ body {
 }
 
 .login-page {
-    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
 }
 
@@ -70,7 +70,7 @@ body {
     position: relative;
     padding-top: 570px;
     width: 619px;
-    height: 900px;
+    height: 100vh;
     background-image: url(img/linkedin-sales-solutions-B_DJO2-K22M-unsplash\ 1.png);
     background-size: cover;
     background-repeat: no-repeat;

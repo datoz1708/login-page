@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F0F2F5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/Inter-Regular.ttf);
+}
+
+.login-page {
+    max-width: 1440px;
+    display: flex;
+}
+
+.left-side {
+    padding: 25px;
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-left p {
+    font-family: Inter;
+    font-size: 16.93px;
+    font-weight: 500;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-right p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.top-right a {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #20DC49;
+}
+
+.right-side {
+    position: relative;
+    padding-top: 570px;
+    width: 619px;
+    height: 900px;
+    background-image: url(img/linkedin-sales-solutions-B_DJO2-K22M-unsplash\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.authentication-page {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 35px auto 0 auto;
+    align-items: center;
+    height: 557px;
+}
+
+.authentication-page h1 {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+.authentication-page h5 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+.login-with-social {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+#google {
+    width: 126px;
+    height: 44px;
+    border-radius: 5px;
+    border: 1px solid #20DC49;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    background-image: url(img/google\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: center;
+    background-position-x: 15px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+#facebook {
+    width: 126px;
+    height: 44px;
+    border-radius: 5px;
+    border: 1px solid #DEDEDE;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    background-image: url(img/facebook\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: center;
+    background-position-x: 15px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.authentication-page span {
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 25px 0;
+}
+
+.authentication-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+#email {
+    width: 400px;
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    padding-left: 25px;
+    outline: none;
+    margin-bottom: 35px;
+}
+
+#password {
+    width: 400px;
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    padding-left: 25px;
+    outline: none;
+    background-image: url(img/blind\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 360px;
+}
+
+.toggle {
+    position: relative;
+    display: flex;
+}
+
+.toggle input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle .onoff {
+    font-weight: 400;
+    color: #1A1A1A;
+    font-size: 12px;
+    margin-bottom: 20px;
+    display: block;
+    font-family: Poppins;
+}
+
+.slider {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background-color: #ECECEC;
+    border: 0.5px solid #C9C9C9;
+    transition: 0.4s;
+    width: 40px;
+    height: 20px;
+    border-radius: 36.5px;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 2px -1px #3333334D;
+    transition: 0.4s;
+    top: 1px;
+    left: 2px;
+}
+
+input:checked + .slider {
+    background-color: #C9C9C9;
+}
+
+input:checked + .slider:before {
+    transform: translateX(19px);
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d-flex a {
+    color: #D93F21;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#login {
+    width: 400px;
+    height: 55px;
+    border-radius: 13px;
+    border: 1px solid #5A5A5A;
+    font-family: Poppins;
+    font-size: 18px;
+    color: #5A5A5A;
+    cursor: pointer;
+}
+
+.content {
+    margin: 0 36px;
+    width: 547px;
+    height: 270px;
+    border-radius: 10px;
+    background-color: #F0F2F2;
+    padding: 35px;
+}
+
+.content button {
+    cursor: pointer;
+    padding-left: 25px;
+    background-image: url(img/like.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 15px;
+    width: 236px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #20DC49;
+    font-family: Roboto;
+    font-size: 14px;
+    border: none;
+}
+
+.content p {
+    font-family: Poppins;
+    font-size: 20px;
+    line-height: 32.97px;
+    color: #202020;
+    max-width: 453px;
+}
+
+.background-shadow {
+    position: absolute;
+    width: 353px;
+    height: 353px;
+    left: -180px;
+    bottom: 100px;
+}
+
+
+

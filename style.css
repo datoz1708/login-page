@@ -77,7 +77,6 @@ body {
     background-size: auto;
     background-repeat: no-repeat;
     padding-top: 470px;
-    height: 100vh;
 }
 
 .right-side img {
@@ -300,8 +299,9 @@ input:checked + .slider:before {
 }
 
 .background-shadow {
-    position: absolute;
+    position: fixed;
     width: 353px;
     height: 353px;
     right: 450px;
+    bottom: 150px;
 }

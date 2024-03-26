@@ -74,7 +74,7 @@ body {
     right: 0;
     bottom: 0;
     background-image: url(img/linkedin-sales-solutions-B_DJO2-K22M-unsplash\ 1.png);
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     padding-top: 470px;
 }
